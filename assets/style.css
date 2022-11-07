@@ -2,6 +2,7 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    --textColor: burlywood;
 }
 
 .root {
@@ -19,4 +20,10 @@
     background-image: url("../assets/images/destiny-witch-queen.jpg");
     background-size: cover;
     background-color: black;
+}
+.timer {
+    padding: 10px;
+    margin: 10px;
+    box-sizing: border-box;
+    color: var(--textColor);
 }
