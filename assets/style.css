@@ -7,10 +7,16 @@
 .root {
     font-family: 'Acme', sans-serif;
     background-color: black;
+
 }
 .header {
     padding: 25px;
     margin: 25px;
     box-sizing: border-box;
     color: burlywood;
+}
+.body {
+    background-image: url("../assets/images/destiny-witch-queen.jpg");
+    background-size: cover;
+    background-color: black;
 }
