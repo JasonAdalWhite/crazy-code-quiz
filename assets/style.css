@@ -14,19 +14,17 @@
     padding: 25px;
     margin: 25px;
     color: burlywood;
-    background-color: black;
-    opacity: 50%;
+    background: rgba(0, 0, 0, 0.5);
 }
 .body {
     background-image: url("../assets/images/destiny-witch-queen.jpg");
     background-size: cover;
-    background-color: black;
+
 }
 .timer {
     padding: 25px;
     margin: 25px;
-    background-color: black;
-    opacity: 50%;
+    background: rgba(0, 0, 0, 0.5);
     color: var(--textColor);
 }
 
@@ -40,11 +38,10 @@
 }
 
 .body ul {
-    background-color: black;
+    background: rgba(0, 0, 0, 0.5);
     justify-content: center;
     padding: 25px;
     margin: 25px;
-    opacity: 50%;
 }
 
 .body li {
