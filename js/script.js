@@ -1,21 +1,17 @@
-// Create a start button with Html
-
 // create an event listener that starts the time when the button is clicked
-document.getElementById('btn1').addEventListener('click', askQuestion);
+document.getElementById('startbtn').addEventListener('click', askQuestion);
 // Create a function that runs a timer
 var startTimer = function() {
     setInterval(startTimer, 120000)
-    
-
-
 };
 // Create a function that renders a question
 const askQuestion = function() {
-    document.getElementById()
+    document.getElementById("click", "startbtn")
 }
 // Create an object that stores the questions and whether the answers are true or not
+// The buttons should hold a data-attribute if the answer is correct or not
 const questions = [{
-    id: 0,
+    q: 0,
     question: "What name did Uldren Sov take on after being revived by a Ghost?",
     answer: [{text: "The Crow", isCorrect: true},
                 {text: "The Raven", isCorrect: false},
@@ -107,9 +103,7 @@ const questions = [{
                 },
             ];
 
-// When rendering question, it should also render answers in buttons
-
-// The buttons should hold a data-attribute if the answer is correct or not
+// Answers should be rendered in button form
 
 // Choosing right answer displays correct, choosing wrong answer displays wrong
 

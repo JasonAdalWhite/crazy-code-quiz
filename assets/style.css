@@ -13,8 +13,9 @@
 .header {
     padding: 25px;
     margin: 25px;
-    box-sizing: border-box;
     color: burlywood;
+    background-color: black;
+    opacity: 50%;
 }
 .body {
     background-image: url("../assets/images/destiny-witch-queen.jpg");
@@ -22,8 +23,36 @@
     background-color: black;
 }
 .timer {
-    padding: 10px;
-    margin: 10px;
-    box-sizing: border-box;
+    padding: 25px;
+    margin: 25px;
+    background-color: black;
+    opacity: 50%;
     color: var(--textColor);
+}
+
+.button {
+    padding: 75px;
+    background-color: var(--textColor);
+    justify-content: space-around;
+    margin-left: 500px;
+    width: 50%;
+    font-size: 30px
+}
+
+.body ul {
+    background-color: black;
+    justify-content: center;
+    padding: 25px;
+    margin: 25px;
+    opacity: 50%;
+}
+
+.body li {
+    font-weight: 30px;
+    font-size: large;
+    color:var(--textColor);
+}
+
+.body div {
+    justify-content: center;
 }
