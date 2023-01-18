@@ -1,52 +1,82 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Destiny Quiz</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Acme&display=swap" rel="stylesheet">
-    <link rel = "stylesheet" href = "assets/style.css">
-</head>
-
-<body class = "body">
-    <header>
-        <h1 class = "header">
-            Welcome to the Destiny Quiz! Do you think you know enough about the Destiny Universe? Test your knowledge with this quiz!
-        </h1>
-        <h2 class = "timer" id = "timer">
-            00:00 
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="./assets/style.css">
+        <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"> -->
+        <title>Destiny Quiz!</title>
+        <link href = "assets/images/destiny_logo.jpg" rel = icon>
+    </head>
+    
+    <body class = "body-background">
+        <header>
+            <a id = leaderboard-link class = "cursor-change">View Highscores</a> 
+            <time>Time: <span id="time"></span></time>
         </header>
-        </h2>
-        <nav>
-            <ul>
-                <li>There are a total of 10 questions! </li>
-                <li>You will only have 30 seconds to answer each question!</li>
-                <li>When the timer runs out, the question will be counted as incorrect!</li>
-                <li>You will be given a grade based on how many you get right!</li>
-                <li>Let's see if you're a true Destiny fan!</li>
-            </ul>
-        </nav>
-
     
-    <div>
-        <button class = "button" id = "startbtn">Start Quiz!</button>
-    </div>
+        <main>
+            <div id = start-card class = "card">
+                <h2 id = title>The Destiny Quiz!</h2>
+                <p>Are you a true guardian? Try to answer all the questions in this quiz to find out!
+                    <br>
+                    <br>
+                Incorrect answers will make Shaxx sad, and remove 10 seconds from the timer :/</p>
+                <button id = start-button class = "button">Start Quiz</button>
+            </div>
     
+            <div hidden id = question-card class = "card">
+    
+                <h2 id = question-text></h2>
+    
+                <div id = quiz-options>
+                    <button id = option0 class = "button option-button"></button>
+                    <button id = option1 class = "button option-button"></button>
+                    <button id = option2 class = "button option-button"></button>
+                    <button id = option3 class = "button option-button"></button>
+                </div>
+    
+                <div id = result-div>
+                    <hr>
+                    <p id = result-text></p>
+                </div>
+    
+            </div>
+    
+        <div hidden id = score-card class = "card">
+            <h2>You are all done Guardian!</h2>
+            <p>Your final score is <span id=score></span>.</p>
+                <form class = "inline-form" id = "submission-form">
+                    <label for = "initials">Enter initials: </label>
+                    <input type = "text" id="initials">
+                    <button id = "submit-button" class = "button">Submit</button>
+                </form>
+        </div>
+    
+            <div hidden id = leaderboard-card class = "card">
+                <h2>Highscores</h2>
+                <ol id = "highscore-list">
+                </ol>
+                <div class = "inline-buttons">
+                    <button id = "back-button" class = "button">Go Back</button>
+                    <button id = "clear-button" class = "button">Clear Highscores</button>
+                </div>
+            </div>
+    
+        </main>
+        
+        <script src = "./js/script.js"></script>
+    </body>
+    
+    </html>
 
 
 
-<script src = "js/script.js"></script>
-</body>
 
-</html>
-
-
-
-
-
+    <!-- AS A coding boot camp student
+    I WANT to take a timed quiz on JavaScript fundamentals that stores high scores
+    SO THAT I can gauge my progress compared to my peers
+-->
 
 <!-- GIVEN I am taking a code quiz
 WHEN I click the start button
@@ -59,6 +89,5 @@ WHEN all questions are answered or the timer reaches 0
 THEN the game is over
 WHEN the game is over
 THEN I can save my initials and score -->
-
 
 

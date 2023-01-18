@@ -1,55 +1,136 @@
-*{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-    --textColor: burlywood;
+/* Body Styles */
+
+body {
+    font-family: 'Courier New', Courier, monospace;
+    margin: 0px;
 }
 
-.root {
-    font-family: 'Acme', sans-serif;
-    background-color: black;
+.body-background {
+    background-image: url(./images/destiny-2-video-game-1366x768_899875-mm-90.jpg);
+    
+}
 
-}
-.header {
-    padding: 25px;
-    margin: 25px;
-    color: burlywood;
-    background: rgba(0, 0, 0, 0.5);
-}
-.body {
-    background-image: url("../assets/images/destiny-witch-queen.jpg");
-    background-size: cover;
+/* Header Styles  */
 
+header {
+    display: flex;
+    justify-content: space-between;
+    background-color: #252525;
+    color: white;
+    padding: 3vh;
 }
-.timer {
-    padding: 25px;
-    margin: 25px;
-    background: rgba(0, 0, 0, 0.5);
-    color: var(--textColor);
+
+time {
+    min-width: 85px;
 }
+
+/* Main Styles */
+
+main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Button Styles */
 
 .button {
-    padding: 75px;
-    background-color: var(--textColor);
-    justify-content: space-around;
-    margin-left: 500px;
-    width: 50%;
-    font-size: 30px
+    display: block;
+    color: #252525;
+    background-color: white;
+    padding: 2vh;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
 }
 
-.body ul {
-    background: rgba(0, 0, 0, 0.5);
-    justify-content: center;
-    padding: 25px;
-    margin: 25px;
+.inline-buttons {
+    display: inline-flex;
 }
 
-.body li {
-    font-weight: 30px;
-    font-size: large;
-    color:var(--textColor);
+/* Card Styles */
+
+.card {
+    border: solid;
+    border-width: 2px;
+    max-width: 80%;
+    margin-top: 15vh;
+    padding: 5vw;
+    border-radius: 30px;
+    border-color: black;
+    box-shadow: 10px 5px 5px black;
+    background-color: #252525;
+    color: white;
 }
 
-.body div {
-    justify-content: center;
+/* Start Card Styles */
+
+#start-screen {
+    display: inline;
+    text-align: center;
+}
+
+/* Question Card Styles */
+
+.option-button {
+    width: 100%;
+    text-align: left;
+    margin: 5px;
+}
+
+#result-div {
+    display: none;
+}
+
+/* Score Card Styles */
+
+.inline-form {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+#initials {
+    width: 25%;
+    margin: 8px;
+    padding: 1vh;
+}
+
+/* Leaderboard Card Styles */
+
+#back-button {
+    margin-right: 8px;
+}
+
+.highscore-list {
+    padding-inline-start: 20px;
+}
+
+/* Cursor change over leaderboard */
+
+.cursor-change {
+    cursor: pointer;
+}
+
+/* Media Queries */
+
+@media screen and (min-width: 850px) {
+    .card {
+        max-width: 680px;
+    }
+}
+
+/* Media query that specifies devices that can utilize hover */
+
+@media (hover) {
+
+    /* Stylings pertaining to hover pseudo-class*/
+
+    a:hover {
+        color: #cbe1e0;
+    }
+
+    button:hover {
+        background-color: rgba(52, 125, 123, 0.5);
+    }
 }
