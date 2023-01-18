@@ -5,7 +5,8 @@
 4. If you answer a question incorrectly, you will be penalized by having 10 seconds taken off of the timer. 
 5. You will be given a score based on how quickly you can complete the quiz!
 6. There is a leaderboard you can use to track highest scores achieved!
+7. Are you a true guardian? 
+8. Link to the deployed application: 
 
-Are you a true guardian? 
 
 ![destiny-quiz](https://user-images.githubusercontent.com/97865978/213260188-fcb9a1f2-39f8-48cd-a645-ceab864bd419.png)
