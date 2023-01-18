@@ -1,7 +1,8 @@
 # crazy-code-quiz
 This is a mutiple choice quiz about the Destiny Universe!
-It is designed with 10 questions, and has a timer implemented.
-You will only have 30 seconds to answer each question!
-When the timer runs out for the question, it will be marked incorrect!
-You will be given a grade based on how many you get correct!
+There are 10 questions!
+You will have 100 seconds to complete the quiz before time completely runs out!
+If you answer a question incorrectly, you will be penalized by having 10 seconds taken off of the timer. 
+You will be given a score based on your time and number of questions correct!
+Are you a true guardian? 
 
